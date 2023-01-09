@@ -8,4 +8,4 @@ HTML,CSS
 
 ![](ekran.gif)
 
-<a href="index.html"></a>
+<a href="file:///C:/Users/Lenovo/Desktop/Emine%20Html%20%20ve%20css%20dersleri/otomobil%20animasyon%20proje/index.html"></a>
