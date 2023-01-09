@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.yol {
+    background: url(./image/arka.jpg);
+    height: 500px;
+    width: 1000px;
+    background-size: cover;
+    animation-name: yol_arka;
+    animation-direction: normal;
+    animation-duration: 2s;
+    /*2 sny sürsün*/
+    animation-iteration-count: infinite;
+    /*1kere dönsün*/
+    animation-timing-function: linear;
+    /*yavaşlamadan dönsün*/
+    animation-direction: reverse;
+
+
+}
+
+@keyframes yol_arka {
+    from {}
+
+    to {
+        background-position: 889px 0;
+    }
+
+    /* yol x  ekseninde 700px kaysın dedik y ye değer vermedik ters gittiği için yukarda animation direktion reverse dersek animasyon ters gider*/
+}
+
+
+.araba {
+    width: 420px;
+    height: 150px;
+    background: url(./image/arac.png);
+    position: absolute;
+    top: 385px;
+    left: 250px;
+}
+
+.teker {
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    background: url(./image/teker.png);
+    top: 84px;
+    left: 42px;
+    animation-name: dondur;
+    animation-direction: normal;
+    animation-duration: 4s;
+    /*2 sny sürsün*/
+    animation-iteration-count: infinite;
+    /*1kere dönsün*/
+    animation-timing-function: linear;
+    /*yavaşlamadan dönsün*/
+
+}
+
+
+
+@keyframes dondur {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.teker:nth-child(1) {
+    left: 42px;
+}
+
+.teker:nth-child(2) {
+    left: 310px;
+}
